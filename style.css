@@ -1,0 +1,107 @@
+/* Changing theme */
+body.light {
+  --bg: #f4f4f4;
+  --fg: #333;
+  --card: #fff;
+  --btn: #00b894;
+}
+
+body.dark{
+  --bg: #2e2e2e;
+  --fg: #ddd;
+  --card: #3a3a3a;
+  --btn: #098d5f;
+}
+
+body{
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--btn);
+  color: white;
+  padding: 1rem;
+}
+
+header #changeTheme{
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+main{
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.cardForm{
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup{
+  margin-bottom: 1rem;
+}
+
+.formGroup input,
+.formGroup select{
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.btn{
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--btn);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.summaryGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.converted{
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.transactionCard ul{
+  list-style: none;
+  padding: 0;
+}
+
+.transactionCard li{
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+footer{
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: var(--card);
+}

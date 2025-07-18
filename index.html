@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackFinance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <header>
+    <h1>TrackFinance</h1>
+    <button id="changeTheme" aria-label="Toggle theme">💡</button>
+  </header>
+
+  <main>
+    <section class="cardForm">
+      <h2>Transaction</h2>
+      <form id="transactionForm">
+        <div class="formGroup">
+          <input type="text" id="description" placeholder="Description" required>
+        </div>
+
+        <div class="formGroup">
+          <input type="number" id="amount" placeholder="Amount (RWF)" required>
+        </div>
+
+        <div class="formGroup">
+          <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Add Transaction</button>
+      </form>
+    </section>
+
+    <section class="summaryCard">
+      <h2>Summary</h2>
+      <div class="summaryGrid">
+        <div><span id="totalIncome">0.00</span> RWF<br><small>Income</small></div>
+        <div><span id="totalExpense">0.00</span> RWF<br><small>Expense</small></div>
+        <div>
+          <span id="balance">0.00</span> RWF<br>
+          <small>Balance</small>
+          <div id="usdBalance" class="converted"> 0.00 USD</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exchangeCard">
+      <h2>USD - RWF Rate</h2>
+      <p>1 USD = <span id="usdRate"></span> RWF</p>
+    </section>
+
+    <section class="transactionCard">
+      <h2>Transactions</h2>
+      <ul id="transactionList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright 2025, TrackFinance - MUVUNYI DUKE</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
