@@ -3,64 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TrackFinance</title>
+  <title>TrackFinance App</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="light">
+<body>
   <header>
-    <h1>TrackFinance</h1>
-    <button id="changeTheme" aria-label="Toggle theme">💡</button>
+    <div class="logo">
+      <a href="#" id="home">TrackFinance</a>
+    </div>
   </header>
 
   <main>
-    <section class="cardForm">
-      <h2>Transaction</h2>
+    <section class="transactionForm">
+      <h2>Add Transaction</h2>
       <form id="transactionForm">
-        <div class="formGroup">
-          <input type="text" id="description" placeholder="Description" required>
-        </div>
-
-        <div class="formGroup">
-          <input type="number" id="amount" placeholder="Amount (RWF)" required>
-        </div>
-
-        <div class="formGroup">
-          <select id="type">
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn">Add Transaction</button>
+        <input type="text" id="description" placeholder="Description" step="0.01" required>
+        <input type="number" id="amount" placeholder="Enter Amount (RWF)" step="0.01" required>
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Add</button>
       </form>
     </section>
 
-    <section class="summaryCard">
-      <h2>Summary</h2>
-      <div class="summaryGrid">
-        <div><span id="totalIncome">0.00</span> RWF<br><small>Income</small></div>
-        <div><span id="totalExpense">0.00</span> RWF<br><small>Expense</small></div>
-        <div>
-          <span id="balance">0.00</span> RWF<br>
-          <small>Balance</small>
-          <div id="usdBalance" class="converted"> 0.00 USD</div>
-        </div>
-      </div>
+    <section class="summary">
+      <h2>Transaction Summary</h2>
+      <p><strong>Total Income:</strong> RWF <span id="totalIncome">0.00</span></p>
+      <p><strong>Total Expenses:</strong> RWF <span id="totalExpenses">0.00</span></p>
+      <p><strong>Balance:</strong> RWF <span id="balance">0.00</span></p>
     </section>
 
-    <section class="exchangeCard">
-      <h2>USD - RWF Rate</h2>
-      <p>1 USD = <span id="usdRate"></span> RWF</p>
-    </section>
-
-    <section class="transactionCard">
-      <h2>Transactions</h2>
+    <section class="transactionHistory">
+      <h2>Transaction History</h2>
       <ul id="transactionList"></ul>
     </section>
+
+    <section class="resources">
+      <h2>Want to Learn about Finance?</h2>
+      <div class="books">
+        <h3>Books</h3>
+        <p id="quote">"Libraries will get you through times of no money better than money will get you through times of no libraries."</p>
+        <ul id="booksList"></ul>
+      </div>
+
+      <div class="news">
+        <h3>News</h3>
+        <ul id="newsList"></ul>
+      </div>
+    </section>
   </main>
+  
 
   <footer>
-    <p>Copyright 2025, TrackFinance - MUVUNYI DUKE</p>
+    <p>© 2025 TrackFinance. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>

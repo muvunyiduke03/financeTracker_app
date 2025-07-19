@@ -1,107 +1,121 @@
-/* Changing theme */
-body.light {
-  --bg: #f4f4f4;
-  --fg: #333;
-  --card: #fff;
-  --btn: #00b894;
-}
-
-body.dark{
-  --bg: #2e2e2e;
-  --fg: #ddd;
-  --card: #3a3a3a;
-  --btn: #098d5f;
-}
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 body{
-  background: var(--bg);
-  color: var(--fg);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
+  padding: 0;
+  background: whitesmoke;
+  color: rgb(19, 18, 18);
 }
 
 header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--btn);
+  background-color: #145799;
   color: white;
   padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-header #changeTheme{
-  background: none;
-  border: none;
-  color: whitesmoke;
-  font-size: 1.5rem;
+.logo{
+  font-weight:inherit;
+  margin-right: 100%;
+  font-size: 18px;
+  padding-right: 50% ;
+  font-family: 'Michroma';
   cursor: pointer;
+  color: rgb(243, 240, 65);
 }
 
 main{
-  max-width: 800px;
+  padding: 1em;
+  max-width: 100%;
   margin: auto;
-  padding: 1rem;
 }
 
-.cardForm{
-  background: var(--card);
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1.rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+section{
+  margin-bottom: 2em;
+  background: whitesmoke;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 5px 6px rgba(6, 43, 99, 0.849);
 }
 
-.formGroup{
-  margin-bottom: 1rem;
+form input, form select, form button{
+  padding: 0.5em;
+  margin: 0.5em 0;
+  width: 95%;
+  border: 1px solid #61cbf5;
+  border-radius: 50px;
 }
 
-.formGroup input,
-.formGroup select{
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: var(--bg);
-  color: var(--fg);
-}
-
-.btn{
-  width: 100%;
-  padding: 0.75rem;
-  background: var(--btn);
-  color: white;
+form button{
+  background-color: #1786f5;
+  color: rgb(241, 222, 222);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 100%;
   border: none;
-  border-radius: 4px;
-  font-size: 1rem;
   cursor: pointer;
 }
 
-.summaryGrid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+form button:hover{
+  background-color: cadetblue;
+  color: darkblue;
+}
+
+#transactionList li{
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background: #ecf0f1;
+  border-left: 5px solid #2e86de;
+  border-radius: 6px;
+}
+
+.books #quote{
   text-align: center;
+  font-weight: lighter;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: darkgray;
+}
+.books ul{
+  list-style-type: none;
+  padding: 1em;
+  margin-top: 1em;
 }
 
-.converted{
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #888;
+.booksItems{
+  background-color: #dadada;
+  padding: 0.8em 1em;
+  margin-bottom: 0.7em;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.transactionCard ul{
-  list-style: none;
-  padding: 0;
+.booksItems:hover{
+  background-color: #d6e8fd;
+  transform: translateY(-2px);
 }
 
-.transactionCard li{
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ccc;
+.booksLink{
+  color: #2e86de;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.booksLink:hover{
+  text-decoration: underline;
 }
 
 footer{
+  background-color: #2e86de;
+  color: whitesmoke;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  background: var(--card);
+  padding: 1em;
+}
+
+.logo a{
+  text-decoration: none;
+  color: inherit;
 }
