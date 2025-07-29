@@ -1,13 +1,17 @@
-# Use Nginx to serve static content
+# Use the official Nginx image as the base
 FROM nginx:alpine
 
-# Copy your static files to nginx's default public folder
-WORKDIR /usr/share/nginx/html
+# Remove default nginx configuration
+RUN rm /etc/nginx/conf.d/default.conf
 
-COPY . .
+# Copy our custom nginx config
+COPY default.conf /etc/nginx/conf.d/default.conf
+
+# Copy app files to nginx HTML directory
+COPY . /usr/share/nginx/html
 
 # Expose port 8080
 EXPOSE 8080
 
-# Override default nginx port to 8080
+# Start nginx
 CMD ["nginx", "-g", "daemon off;"]
