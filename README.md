@@ -32,40 +32,6 @@ to fetch books for the users.
 - ## 📦 Installation and Running Locally
 To run the project locally:
 
-# 💰 FinanceTracker
-
-**FinanceTracker** is a personal finance tracking web application that helps users manage their income and expenses, monitor their current balance, and discover helpful books on personal finance. The application is built using HTML, CSS, and JavaScript, and it integrates with the [Open Library API](https://openlibrary.org/developers/api) to recommend financial literacy resources.
-
----
-
-## 🚀 Features
-
-- Add, categorize, and list financial transactions as **income** or **expenses**
-- View a real-time summary of:
-  - Total income
-  - Total expenses
-  - Current balance
-- Persistent data storage using `localStorage`
-- Responsive design for both desktop and mobile screens
-- Book recommendations fetched from an external API
-- Easy-to-use and intuitive user interface
-- Delete transactions (UX enhancement)
-
----
-
-## 🧩 Technologies Used
-
-- HTML5
-- CSS3 (Media queries for responsive design)
-- JavaScript (DOM manipulation & API handling)
-- [Open Library API](https://openlibrary.org/developers/api) — for fetching personal finance books
-
----
-
-## 📦 Installation & Running Locally
-
-To run the project locally:
-
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/FinanceTracker.git
