@@ -43,7 +43,8 @@ To run the project locally:
 
 ## 🌐 Deployment
 This app was deployed usin Vercel and can be accessed at:
-🔗
+
+🔗: https://finance-tracker-mnhd.netlify.app/
 
 ## ⚙️ Project Structure
 
