@@ -29,18 +29,6 @@ to fetch books for the users.
 - JavaScript (DOM manipulation & API handling)
 - [Open Library API](https://openlibrary.org/developers/api) — for fetching personal finance books for the users.
 
-- ## 📦 Installation and Running Locally
-To run the project locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/muvunyiduke03/FinanceTracker.git
-   cd FinanceTracker
-
-2. Open the index.html file in your browser:
-   ```bash
-   open index.html
-
 ## 🌐 Deployment
 This app was deployed using Netlify and can be accessed at:
 
