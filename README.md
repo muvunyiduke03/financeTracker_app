@@ -34,7 +34,7 @@ To run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/FinanceTracker.git
+   git clone https://github.com/muvunyiduke03/FinanceTracker.git
    cd FinanceTracker
 
 2. Open the index.html file in your browser:
