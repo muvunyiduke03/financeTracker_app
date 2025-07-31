@@ -2,7 +2,7 @@
 
 **FinanceTracker** is a finance tracking web application that will help the users to manage their
 income and expenses, monitor their current balance and discover books that will teach them more about
-financial wisdom.
+financial responsibility.
 
 The application was developed using HTML, CSS and JavaScript and used [Open Library API](https://openlibrary.org/developers/api)
 to fetch books for the users.
