@@ -65,7 +65,7 @@ transactionForm.addEventListener("submit", e => {
   const type = document.getElementById("type").value;
 
   if (!description || isNaN(amount) || amount < 0) {
-    alert("Please enter a valid description and an amount above 0.")
+    alert("Please enter a valid description and an amount above 0 RWF.")
     return;
   }
 
