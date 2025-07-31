@@ -49,7 +49,7 @@ This app was deployed using Netlify and can be accessed at:
 ## ⚙️ Project Structure
 
 FinanceTracker/  
-│
+│  
 ├── index.html  
 ├── style.css         
 ├── script.js         
