@@ -1,6 +1,6 @@
-# FinanceTracker
+# TrackFinance
 
-**FinanceTracker** is a finance tracking web application that will help the users to manage their
+**TrackFinance** is a finance tracking web application that will help the users to manage their
 income and expenses, monitor their current balance and discover books that will teach them more about
 financial responsibility.
 
