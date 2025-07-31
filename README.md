@@ -42,7 +42,7 @@ To run the project locally:
    open index.html
 
 ## 🌐 Deployment
-This app was deployed usin Vercel and can be accessed at:
+This app was deployed using Netlify and can be accessed at:
 
 🔗: https://finance-tracker-mnhd.netlify.app/
 
