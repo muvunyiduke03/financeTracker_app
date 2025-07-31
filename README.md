@@ -50,7 +50,7 @@ This app was deployed using Netlify and can be accessed at:
 
 FinanceTracker/
 │
-├── index.html \n
+├── index.html  
 ├── style.css         
 ├── script.js         
 ├── README.md         
