@@ -50,12 +50,12 @@ This app was deployed using Netlify and can be accessed at:
 
 FinanceTracker/
 │
-├── index.html        # Main HTML file
-├── style.css         # CSS styles
-├── script.js         # Main JavaScript logic
-├── README.md         # Project documentation
-├── .gitignore        # Git ignored files
-└── vercel.json       # Vercel deployment configuration
+├── index.html \n
+├── style.css         
+├── script.js         
+├── README.md         
+├── .gitignore      
+└── vercel.json       
 
 
 ## 📚 API Attribution
