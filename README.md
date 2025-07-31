@@ -58,7 +58,7 @@ FinanceTracker/
 
 ## 📹 Demo Video
 Watch the video below to understand more about the app:
-🎬
+🎬: https://youtu.be/AsQFa95los0
 
 ## 👤 Author
 - **Developer**: MUVUNYI Ndamage Herve Duke
